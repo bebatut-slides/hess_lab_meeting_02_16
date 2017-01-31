@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="phylogenetic_contrast_relation.svg"
-   inkscape:export-filename="/Users/bebatut/Documents/phd/com/2017/backofen_lab_meeting_02_16/images/phylogenetic_contrast_relation.png"
+   inkscape:export-filename="/Users/bebatut/Documents/phd/com/2017/hess_lab_meeting_02_16/images/phylogenetic_contrast_relation.png"
    inkscape:export-xdpi="67.976593"
    inkscape:export-ydpi="67.976593">
   <sodipodi:namedview
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="364.59532"
-     inkscape:cy="224.16278"
+     inkscape:cx="480.30961"
+     inkscape:cy="338.44849"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -38,7 +38,7 @@
      inkscape:window-width="1280"
      inkscape:window-height="756"
      inkscape:window-x="52"
-     inkscape:window-y="43"
+     inkscape:window-y="209"
      inkscape:window-maximized="0" />
   <defs
      id="defs4">
@@ -714,6 +714,34 @@
          d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
          id="path3129-6" />
     </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mstartt-8"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mstartt">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(0.4,0,0,0.4,4,0)"
+         style="fill:#00ff00;fill-rule:evenodd;stroke:#00ff00;stroke-width:1pt;marker-start:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path3126-4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mendr-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mendr">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#00ff00;fill-rule:evenodd;stroke:#00ff00;stroke-width:1pt;marker-start:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path3129-2" />
+    </marker>
   </defs>
   <metadata
      id="metadata7">
@@ -1051,11 +1079,6 @@
            id="rect2989-0-5-7-8-6-1" /></flowRegion><flowPara
          id="flowPara2991-0-7-0-4-1-4">+ 0.725</flowPara></flowRoot>    <path
        inkscape:connector-curvature="0"
-       id="path3166-6"
-       d="M 438.57138,13.083183 602.8571,-58.345392"
-       style="fill:none;stroke:#ff0000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1MstartZ-50);marker-end:url(#Arrow1Mendl-8)" />
-    <path
-       inkscape:connector-curvature="0"
        id="path3126-5-9"
        d="M 253.57144,13.083186 89.285701,-58.345395"
        style="fill:none;stroke:#00ff00;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstartt-5);marker-end:url(#Arrow1Mendr-0)" />
@@ -1083,5 +1106,10 @@
            height="163.8898"
            width="180.71364"
            id="rect2989-0-5-7-8-6-1-6" /></flowRegion><flowPara
-         id="flowPara2991-0-7-0-4-1-4-9">+ 0.798</flowPara></flowRoot>  </g>
+         id="flowPara2991-0-7-0-4-1-4-9">+ 0.798</flowPara></flowRoot>    <path
+       inkscape:connector-curvature="0"
+       id="path3126-5-5"
+       d="M 602.8571,-58.345393 438.57137,13.083185"
+       style="fill:none;stroke:#00ff00;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstartt-8);marker-end:url(#Arrow1Mendr-9)" />
+  </g>
 </svg>

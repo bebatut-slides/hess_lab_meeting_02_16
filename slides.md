@@ -20,19 +20,7 @@ University of Freiburg<br><br>Hess lab meeting <br>February 2017
 
 ---
 
-## Evolution
-
-----
-
-### How most people see evolution?
-
-![](images/evolution_popular_view.png)
-
-But it's WRONG!
-
-----
-
-### Facts about evolution
+### Evolution
 
 ![](images/evolution_real_view.png)
 
@@ -150,15 +138,27 @@ How to explain the actual differences in genome size?
 
 ---
 
-## Genome architecture and reductive evolution
+## Genome architecture <br>and reductive evolution
 
-*add what is expected in a table*
+*Impact of genome reduction on the genome structure?*
 
 ----
 
-### Genome architecture evolution study<br>using phylogenetic contrasts
+### Study using phylogenetic contrasts
 
 ![](images/phylogenetic_contrasts.png)
+
+----
+
+### Genome structure study
+
+- Data
+    - 12 *Prochlorococcus* genomes and 6 marine *Synechococcus* genomes
+    - Phylogenetic tree built with [PhyML](http://www.atgc-montpellier.fr/phyml/) on 693 orthologous gene families aligned with [Prank](https://www.ebi.ac.uk/goldman-srv/prank/prank/) 
+    - Gene positions extracted from NCBI database
+    - Operon data from [Memon et al, 2013](http://link.springer.com/article/10.1007/s10482-012-9813-0)
+- Methods
+    - Phylogenetic contrasts
 
 ----
 
@@ -172,51 +172,67 @@ How to explain the actual differences in genome size?
 
 ![](images/phylogenetic_contrast_relation.png)
 
-----
-
-### Intragenic recombination estimation
-
-*Scheme to explain intragenic recombination???*
-
-*Syn* / *Prochl* HL | Non recomb. | Recomb. | Missing | **Total**
---- | --- | --- | --- | --- | ---
-Non recomb. | 589 | 92 | 246 | **927**
-Recomb. | 96 | 21 | 41 | **158**
-Missing | 308 | 27 | - | **335**
-**Total** | **993** | **140** | **287** | -
-
-*Methods:* PHI
-
-Note:
-
-Recombinaison intragénique à l’aide du logiciel PHI (Bruen et al., 2006), qui permet de détecter la présence de recombinaison dans des alignements multiples à l’échelle des gènes en identifiant des sites dont l’histoire est incompatible avec l’histoire de la famille de gènes. Cette méthode est l’une des plus robustes aux variations des taux de recombinaison, aux divergences des séquences et de dynamiques de population (Bruen et al., 2006). L’objectif est de déterminer si une famille de gènes homologues a subi des évènements de conversion de gènes parmi les membres des taxons d’intérêt. Pour éviter un effet possible du nombre de gènes dans l’alignement sur l’estimation de la recombinaison, l’étude se concentre sur des familles de gènes homologues sans paralogues.
-
-- 6 strains for each group
-- homologous gene families
-
 ---
 
 ## Gene content evolution
 
-*add what is expected in a table*
+*Were there only gene losses? Where were the genes mostly lost?*
 
 ----
 
 ### Previous studies
 
+![](images/previous_gene_content_analyses.png)
+
+<small>Information extracted from [Kettler et al, 2007](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.0030231), [Luo et al, 2011](http://mbe.oxfordjournals.org/content/28/10/2751.short) and [Sun & Blanchard, 2014](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0088837)<br><br>Methods using maximum parsimony</small>
+
 ----
 
-### Reconstruction of the gene losses and gains
+### Reconstruction of the gene loss and gain tree
+
+- Data
+    - 12 *Prochlorococcus* genomes and 6 marine *Synechococcus* genomes
+    - Phylogenetic tree built with [PhyML](http://www.atgc-montpellier.fr/phyml/) on 693 orthologous gene families aligned with [Prank](https://www.ebi.ac.uk/goldman-srv/prank/prank/) 
+    - 3,778 gene families (with paralogous and orphan genes) extracted from [Hogenom6](http://doua.prabi.fr/databases/hogenom/home.php?contents=query)
+- Methods
+    - Computation of *a posteriori* gene families size for each internal node with [Count](https://academic.oup.com/bioinformatics/article/26/15/1910/189891/Count-evolutionary-analysis-of-phylogenetic)
+    - Reconstruction of loss and gain gene tree
+
+----
+
+### Gene losses and gains
 
 ![](images/gene_content_evolution.png)
 
-<small>Tree with gene losses and gains built with [Count](https://academic.oup.com/bioinformatics/article/26/15/1910/189891/Count-evolutionary-analysis-of-phylogenetic) on 3,778 gene families</small>
+----
+
+### Origin of the lost genes
+
+![](images/origin_lost_genes_with_tree.png)
 
 ---
 
 ## Gene length evolution
 
-*add what is expected in a table*
+*Are the gene lengths impacted by the genome reduction?*
+
+----
+
+## Gene length and Genome size
+
+![](images/genome_size_gene_length.png)
+
+----
+
+### Length gene evolution reconstruction
+
+- Data
+    - 12 *Prochlorococcus* genomes and 6 marine *Synechococcus* genomes
+    - Phylogenetic tree built with [PhyML](http://www.atgc-montpellier.fr/phyml/) on 693 orthologous gene families aligned with [Prank](https://www.ebi.ac.uk/goldman-srv/prank/prank/) 
+    - 693 orthologous gene families (with paralogous and orphan genes) extracted from [Hogenom6](http://doua.prabi.fr/databases/hogenom/home.php?contents=query)
+- Method
+    - Estimation of insertions and deletions inside the gene families using [Prank](https://www.ebi.ac.uk/goldman-srv/prank/prank/)
+    - Reconciliation between gene family and species trees using [Prunier](http://pbil.univ-lyon1.fr/software/prunier/)
 
 ----
 
@@ -224,19 +240,23 @@ Recombinaison intragénique à l’aide du logiciel PHI (Bruen et al., 2006), 
 
 ![](images/gene_length_evolution.png)
 
-<small>Estimation of insertions and deletions inside 693 gene families using [Prank](https://www.ebi.ac.uk/goldman-srv/prank/prank/) after reconciliation between gene family and species trees using [Prunier](http://pbil.univ-lyon1.fr/software/prunier/)</small>
+----
+
+### Mean gene length change <br>since *Prochlorococcus* and *Synechococcus* CA
+
+![](images/mean_gene_length_change.png)
 
 ---
 
-## GC content, codon usage, tRNA and optimal codons
+## GC content, codon usage, <br>tRNA genes and optimal codons
 
-*add what is expected in a table*
+*What is the impact of AT enrichment? What is behind?*
 
 ----
 
 ### GC content evolution
 
-*add tree with GC content evolution*
+![](images/gc_changes.png)
 
 ----
 
@@ -305,6 +325,27 @@ Recombinaison intragénique à l’aide du logiciel PHI (Bruen et al., 2006), 
 
 ---
 
+### Future work
+
+Integrating all the new available genome
+
+Issues
+
+- Integration of the draft and non annotated genomes ?
+- Need to build a new datasetcreate the orthologous gene family set
+
+----
+
+### Future work
+
+- Genome structure
+    - Looking at the transcriptome structure
+    - Finding more reliable operonic data
+- Gene losses and gains
+    - Relate the lost and gained genes to annotation
+
+---
+
 ## Sup slides
 
 ----
@@ -322,6 +363,26 @@ Recombinaison intragénique à l’aide du logiciel PHI (Bruen et al., 2006), 
 
 
 ----
+
+### Intragenic recombination estimation
+
+*Scheme to explain intragenic recombination???*
+
+*Syn* / *Prochl* HL | Non recomb. | Recomb. | Missing | **Total**
+--- | --- | --- | --- | --- | ---
+Non recomb. | 589 | 92 | 246 | **927**
+Recomb. | 96 | 21 | 41 | **158**
+Missing | 308 | 27 | - | **335**
+**Total** | **993** | **140** | **287** | -
+
+*Methods:* PHI
+
+Note:
+
+Recombinaison intragénique à l’aide du logiciel PHI (Bruen et al., 2006), qui permet de détecter la présence de recombinaison dans des alignements multiples à l’échelle des gènes en identifiant des sites dont l’histoire est incompatible avec l’histoire de la famille de gènes. Cette méthode est l’une des plus robustes aux variations des taux de recombinaison, aux divergences des séquences et de dynamiques de population (Bruen et al., 2006). L’objectif est de déterminer si une famille de gènes homologues a subi des évènements de conversion de gènes parmi les membres des taxons d’intérêt. Pour éviter un effet possible du nombre de gènes dans l’alignement sur l’estimation de la recombinaison, l’étude se concentre sur des familles de gènes homologues sans paralogues.
+
+- 6 strains for each group
+- homologous gene families
 
 
 
