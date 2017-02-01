@@ -365,6 +365,12 @@ High mutation rate | High sequence evolution, AT base enrichment, Synonymous cod
 
 ---
 
+## Hypothetical evolution story
+
+![](images/story.png)
+
+---
+
 ### Future work
 
 ![](images/ncbi_prochlorococcus.png)
@@ -395,4 +401,4 @@ High mutation rate | High sequence evolution, AT base enrichment, Synonymous cod
 
 ## Thank You!
 
-![](images/reductive_evolution_summary.png)
+![](images/story.png)
