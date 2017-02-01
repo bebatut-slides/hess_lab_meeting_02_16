@@ -130,11 +130,6 @@ How to explain the actual differences in genome size?
 - No hypotheses to explain all genome characteristics for *Prochlorococcus*
 - Need for supplementary studies
 
-----
-
-### Analyses of *Prochlorococcus*<br>reductive genome evolution
-
-![](images/prochlorococcus_genomic_studies.png)
 
 ---
 
@@ -267,7 +262,7 @@ How to explain the actual differences in genome size?
     - Phylogenetic tree built with [PhyML](http://www.atgc-montpellier.fr/phyml/) on 693 orthologous gene families aligned with [Prank](https://www.ebi.ac.uk/goldman-srv/prank/prank/) 
     - 693 orthologous gene families (one gene per genome) extracted from [Hogenom6](http://doua.prabi.fr/databases/hogenom/home.php?contents=query)
     - Expression data for MED4 from [Wang et al, 2014](https://bmcmicrobiol.biomedcentral.com/articles/10.1186/1471-2180-14-11)
-- Method
+- Methods
     - Custom scripts to compute GCs, ENC, ENC', inter species analysis of amino acid and synonymous codon usage, optimal codons (2 methods)
     - Extraction of tRNA genes using [tRNAscan-SE](http://lowelab.ucsc.edu/tRNAscan-SE/)
     - tRNA gene losses and gains build using Wagner's parcimony
@@ -310,11 +305,15 @@ How to explain the actual differences in genome size?
 
 ---
 
-## Sequence evolution and selective pressures
+## Sequence evolution and<br>selective pressures
+
+*Is there changes in selective pressures to explain or as results of reductive genome evolution?*
 
 ----
 
 ### Sequence evolution speed
+
+![](images/evolution_speed.png)
 
 ----
 
@@ -324,7 +323,7 @@ How to explain the actual differences in genome size?
 
 ----
 
-### Changes in selective pressures?<br>Previous estimations
+### Previous estimations of selective pressures
 
 ![](images/previous_dN_dS_estimations.png)
 
@@ -332,32 +331,48 @@ How to explain the actual differences in genome size?
 
 ----
 
-### Changes in selective pressures?<br>With correction of GC content
+### Selective pressure estimation
+
+- Data
+    - 12 *Prochlorococcus* genomes and 6 marine *Synechococcus* genomes
+    - Phylogenetic tree built with [PhyML](http://www.atgc-montpellier.fr/phyml/) on 693 orthologous gene families aligned with [Prank](https://www.ebi.ac.uk/goldman-srv/prank/prank/) 
+    - 693 orthologous gene families (one gene per genome) extracted from [Hogenom6](http://doua.prabi.fr/databases/hogenom/home.php?contents=query)
+- Methods
+    - dN/dS estimated using [Bio++](http://biopp.univ-montp2.fr/wiki/index.php/Main_Page) and [a specific model](https://smpgd2014.sciencesconf.org/conference/smpgd2014/pages/30011.pdf)
+
+----
+
+### Selective pressures
 
 ![](images/dN_dS_tree.png)
-
-<small>dN/dS estimated using [Bio++](http://biopp.univ-montp2.fr/wiki/index.php/Main_Page) and [a specific model](https://smpgd2014.sciencesconf.org/conference/smpgd2014/pages/30011.pdf)</small>
 
 ---
 
 ## Summary
 
+![](images/reductive_evolution_summary.png)
+
 ----
 
-### Changes in *Prochlorococcus*?
+### *Prochlorococcus* reductive evolution
 
-![](images/story.png)
+Hypothesis | For | Against
+--- | --- | ---
+Muller's ratchet | Gene losses, Gene shortening, High sequence evolution, AT base enrichment, Synonymous codon and amino acid changes | Intragenic recombination, No dN/dS changes, Gene gains
+Black queen hypothesis | Loss of some genes | Loss of DNA repair genes
+Adaptation to poor-nutrient environment | Loss of genes, Gene shortening, Gains of genes for adpatation to new environment, AT base enrichment | No genome reduction initiation, Repair gene losses
+High mutation rate | High sequence evolution, AT base enrichment, Synonymous codon and amino acid changes, Loss of non necessary genes | No gain of all lost repair genes, Long term impact of high mutation rate  
 
 ---
 
 ### Future work
 
-Integrating all the new available genome
+![](images/ncbi_prochlorococcus.png)
 
-Issues
+<small>121 genome assemblies on [NCBI](https://www.ncbi.nlm.nih.gov/genome/13712)</small>
 
 - Integration of the draft and non annotated genomes ?
-- Need to build a new datasetcreate the orthologous gene family set
+- Need to create a new dataset with orthologous gene family set
 
 ----
 
@@ -367,52 +382,17 @@ Issues
     - Looking at the transcriptome structure
     - Finding more reliable operonic data
 - Gene losses and gains
-    - Relate the lost and gained genes to annotation
+    - Relating the lost and gained genes to annotation
 - Gene length evolution
-    - Relate gene length changes to biological annotations
-    - Relate gene length changes to selective pressures
-- 
+    - Relating gene length changes to biological annotations
+    - Relating gene length changes to selective pressures
+- GC content, synonymous codon usage, ...
+    - Integrating more expression level data
+- Selective pressures
+    - Investigating the selective pressures with different models
 
 ---
 
-## Sup slides
+## Thank You!
 
-----
-
-### Muller's ratchet
-
-![](images/muller_s_ratchet.png)
-
-
-----
-
-### Population size, mutational bias and selection
-
-![](images/drift_bias_selection_Ne.png)
-
-
-----
-
-### Intragenic recombination estimation
-
-*Scheme to explain intragenic recombination???*
-
-*Syn* / *Prochl* HL | Non recomb. | Recomb. | Missing | **Total**
---- | --- | --- | --- | --- | ---
-Non recomb. | 589 | 92 | 246 | **927**
-Recomb. | 96 | 21 | 41 | **158**
-Missing | 308 | 27 | - | **335**
-**Total** | **993** | **140** | **287** | -
-
-*Methods:* PHI
-
-Note:
-
-Recombinaison intragénique à l’aide du logiciel PHI (Bruen et al., 2006), qui permet de détecter la présence de recombinaison dans des alignements multiples à l’échelle des gènes en identifiant des sites dont l’histoire est incompatible avec l’histoire de la famille de gènes. Cette méthode est l’une des plus robustes aux variations des taux de recombinaison, aux divergences des séquences et de dynamiques de population (Bruen et al., 2006). L’objectif est de déterminer si une famille de gènes homologues a subi des évènements de conversion de gènes parmi les membres des taxons d’intérêt. Pour éviter un effet possible du nombre de gènes dans l’alignement sur l’estimation de la recombinaison, l’étude se concentre sur des familles de gènes homologues sans paralogues.
-
-- 6 strains for each group
-- homologous gene families
-
-
-
-
+![](images/reductive_evolution_summary.png)

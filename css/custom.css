@@ -55,3 +55,7 @@ img{
     size: 0.6em;
     color: #444444;
 }
+
+.reveal table td {
+    font-size: 0.8em;
+}
