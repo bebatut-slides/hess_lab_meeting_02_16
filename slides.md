@@ -229,7 +229,7 @@ How to explain the actual differences in genome size?
 - Data
     - 12 *Prochlorococcus* genomes and 6 marine *Synechococcus* genomes
     - Phylogenetic tree built with [PhyML](http://www.atgc-montpellier.fr/phyml/) on 693 orthologous gene families aligned with [Prank](https://www.ebi.ac.uk/goldman-srv/prank/prank/) 
-    - 693 orthologous gene families (with paralogous and orphan genes) extracted from [Hogenom6](http://doua.prabi.fr/databases/hogenom/home.php?contents=query)
+    - 693 orthologous gene families (one gene per genome) extracted from [Hogenom6](http://doua.prabi.fr/databases/hogenom/home.php?contents=query)
 - Method
     - Estimation of insertions and deletions inside the gene families using [Prank](https://www.ebi.ac.uk/goldman-srv/prank/prank/)
     - Reconciliation between gene family and species trees using [Prunier](http://pbil.univ-lyon1.fr/software/prunier/)
@@ -260,28 +260,53 @@ How to explain the actual differences in genome size?
 
 ----
 
+### Study of codon usage, <br>tRNA genes and optimal codons
+
+- Data
+    - 12 *Prochlorococcus* genomes and 6 marine *Synechococcus* genomes
+    - Phylogenetic tree built with [PhyML](http://www.atgc-montpellier.fr/phyml/) on 693 orthologous gene families aligned with [Prank](https://www.ebi.ac.uk/goldman-srv/prank/prank/) 
+    - 693 orthologous gene families (one gene per genome) extracted from [Hogenom6](http://doua.prabi.fr/databases/hogenom/home.php?contents=query)
+    - Expression data for MED4 from [Wang et al, 2014](https://bmcmicrobiol.biomedcentral.com/articles/10.1186/1471-2180-14-11)
+- Method
+    - Custom scripts to compute GCs, ENC, ENC', inter species analysis of amino acid and synonymous codon usage, optimal codons (2 methods)
+    - Extraction of tRNA genes using [tRNAscan-SE](http://lowelab.ucsc.edu/tRNAscan-SE/)
+    - tRNA gene losses and gains build using Wagner's parcimony
+
+----
+
 ### Composition bias
+
+![](images/GCs.png)
 
 ----
 
 ### Effective number of codons
 
+![](images/enc.png)
+
 ----
 
-### Optimal codons
+### Synonymous codon and amino acids usage
+
+![](images/syn_codon_amino_acid_usage.png)
 
 ----
 
 ### tRNA genes
+
+![](images/tRNA_loss_gain.png)
+
+----
+
+### tRNA genes and optimal codons
+
+![](images/tRNA_codon_opt.png)
 
 ----
 
 ### Impact of AT enrichment on the CDS?
 
 ![](images/codon_usage_summary.png)
-
-<small>Study for 693 gene families of: GC content, effective number of codon, optimal codons, codon usage, amino acid usage, tRNA genes 
-<br>And the relation behind these indicators</small>
 
 ---
 
@@ -343,6 +368,10 @@ Issues
     - Finding more reliable operonic data
 - Gene losses and gains
     - Relate the lost and gained genes to annotation
+- Gene length evolution
+    - Relate gene length changes to biological annotations
+    - Relate gene length changes to selective pressures
+- 
 
 ---
 
