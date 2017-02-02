@@ -20,15 +20,11 @@ University of Freiburg<br><br>Hess lab meeting <br>February 2017
 
 ---
 
-### Evolution
+### How to explain reductive genome evolution?
 
 ![](images/evolution_real_view.png)
 
-- Same evolution time for all organisms
-- No correlation between complexity and genome size
-- Reductive genome evolution
-
-How to explain the actual differences in genome size?
+Why loosing what takes millions of years to evolution to build?
 
 ---
 
@@ -199,12 +195,6 @@ How to explain the actual differences in genome size?
 
 ![](images/gene_content_evolution.png)
 
-----
-
-### Origin of the lost genes
-
-![](images/origin_lost_genes_with_tree.png)
-
 ---
 
 ## Gene length evolution
@@ -240,6 +230,106 @@ How to explain the actual differences in genome size?
 ### Mean gene length change <br>since *Prochlorococcus* and *Synechococcus* CA
 
 ![](images/mean_gene_length_change.png)
+
+---
+
+## Sequence evolution and<br>selective pressures
+
+*Is there changes in selective pressures to explain or as results of reductive genome evolution?*
+
+----
+
+### Sequence evolution speed
+
+![](images/evolution_speed.png)
+
+----
+
+### Selective pressure estimation
+
+![](images/dN_dS_explanation.png)
+
+----
+
+### Previous estimations of selective pressures
+
+![](images/previous_dN_dS_estimations.png)
+
+<small>dN/dS estimated as in [Hu & Blanchard, 2009](http://mbe.oxfordjournals.org/content/26/1/5.short), [Yu et al, 2012](http://www.sciencedirect.com/science/article/pii/S1055790311004039), [Sun & Blanchard, 2014](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0088837)</small>
+
+----
+
+### Selective pressure estimation
+
+- Data
+    - 12 *Prochlorococcus* genomes and 6 marine *Synechococcus* genomes
+    - Phylogenetic tree built with [PhyML](http://www.atgc-montpellier.fr/phyml/) on 693 orthologous gene families aligned with [Prank](https://www.ebi.ac.uk/goldman-srv/prank/prank/) 
+    - 693 orthologous gene families (one gene per genome) extracted from [Hogenom6](http://doua.prabi.fr/databases/hogenom/home.php?contents=query)
+- Methods
+    - dN/dS estimated using [Bio++](http://biopp.univ-montp2.fr/wiki/index.php/Main_Page) and [a specific model](https://smpgd2014.sciencesconf.org/conference/smpgd2014/pages/30011.pdf)
+
+----
+
+### Selective pressures
+
+![](images/dN_dS_tree.png)
+
+---
+
+## Summary
+
+![](images/prochlorococcus_genomic_studies.png)
+
+----
+
+### *Prochlorococcus* reductive evolution
+
+Hypothesis | For | Against
+--- | --- | ---
+Muller's ratchet | Gene losses, Gene shortening, High sequence evolution, AT base enrichment, Synonymous codon and amino acid changes | Intragenic recombination, No dN/dS changes, Gene gains
+Black queen hypothesis | Loss of some genes | Loss of DNA repair genes
+Adaptation to poor-nutrient environment | Loss of genes, Gene shortening, Gains of genes for adpatation to new environment, AT base enrichment | No genome reduction initiation, Repair gene losses
+High mutation rate | High sequence evolution, AT base enrichment, Synonymous codon and amino acid changes, Loss of non necessary genes | No gain of all lost repair genes, Long term impact of high mutation rate  
+
+---
+
+## Hypothetical evolution story
+
+![](images/story.png)
+
+---
+
+### Future work
+
+![](images/ncbi_prochlorococcus.png)
+
+<small>121 genome assemblies on [NCBI](https://www.ncbi.nlm.nih.gov/genome/13712)</small>
+
+- Integration of the draft and non annotated genomes ?
+- Need to create a new dataset with orthologous gene family set
+
+----
+
+### Future work
+
+- Genome structure
+    - Looking at the transcriptome structure
+    - Finding more reliable operonic data
+- Gene losses and gains
+    - Relating the lost and gained genes to annotation
+- Gene length evolution
+    - Relating gene length changes to biological annotations
+    - Relating gene length changes to selective pressures
+- GC content, synonymous codon usage, ...
+    - Integrating more expression level data
+- Selective pressures
+    - Investigating the selective pressures with different models
+
+---
+
+## Thank You!
+
+![](images/story.png)
 
 ---
 
@@ -302,103 +392,3 @@ How to explain the actual differences in genome size?
 ### Impact of AT enrichment on the CDS?
 
 ![](images/codon_usage_summary.png)
-
----
-
-## Sequence evolution and<br>selective pressures
-
-*Is there changes in selective pressures to explain or as results of reductive genome evolution?*
-
-----
-
-### Sequence evolution speed
-
-![](images/evolution_speed.png)
-
-----
-
-### Selective pressure estimation
-
-![](images/dN_dS_explanation.png)
-
-----
-
-### Previous estimations of selective pressures
-
-![](images/previous_dN_dS_estimations.png)
-
-<small>dN/dS estimated as in [Hu & Blanchard, 2009](http://mbe.oxfordjournals.org/content/26/1/5.short), [Yu et al, 2012](http://www.sciencedirect.com/science/article/pii/S1055790311004039), [Sun & Blanchard, 2014](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0088837)</small>
-
-----
-
-### Selective pressure estimation
-
-- Data
-    - 12 *Prochlorococcus* genomes and 6 marine *Synechococcus* genomes
-    - Phylogenetic tree built with [PhyML](http://www.atgc-montpellier.fr/phyml/) on 693 orthologous gene families aligned with [Prank](https://www.ebi.ac.uk/goldman-srv/prank/prank/) 
-    - 693 orthologous gene families (one gene per genome) extracted from [Hogenom6](http://doua.prabi.fr/databases/hogenom/home.php?contents=query)
-- Methods
-    - dN/dS estimated using [Bio++](http://biopp.univ-montp2.fr/wiki/index.php/Main_Page) and [a specific model](https://smpgd2014.sciencesconf.org/conference/smpgd2014/pages/30011.pdf)
-
-----
-
-### Selective pressures
-
-![](images/dN_dS_tree.png)
-
----
-
-## Summary
-
-![](images/reductive_evolution_summary.png)
-
-----
-
-### *Prochlorococcus* reductive evolution
-
-Hypothesis | For | Against
---- | --- | ---
-Muller's ratchet | Gene losses, Gene shortening, High sequence evolution, AT base enrichment, Synonymous codon and amino acid changes | Intragenic recombination, No dN/dS changes, Gene gains
-Black queen hypothesis | Loss of some genes | Loss of DNA repair genes
-Adaptation to poor-nutrient environment | Loss of genes, Gene shortening, Gains of genes for adpatation to new environment, AT base enrichment | No genome reduction initiation, Repair gene losses
-High mutation rate | High sequence evolution, AT base enrichment, Synonymous codon and amino acid changes, Loss of non necessary genes | No gain of all lost repair genes, Long term impact of high mutation rate  
-
----
-
-## Hypothetical evolution story
-
-![](images/story.png)
-
----
-
-### Future work
-
-![](images/ncbi_prochlorococcus.png)
-
-<small>121 genome assemblies on [NCBI](https://www.ncbi.nlm.nih.gov/genome/13712)</small>
-
-- Integration of the draft and non annotated genomes ?
-- Need to create a new dataset with orthologous gene family set
-
-----
-
-### Future work
-
-- Genome structure
-    - Looking at the transcriptome structure
-    - Finding more reliable operonic data
-- Gene losses and gains
-    - Relating the lost and gained genes to annotation
-- Gene length evolution
-    - Relating gene length changes to biological annotations
-    - Relating gene length changes to selective pressures
-- GC content, synonymous codon usage, ...
-    - Integrating more expression level data
-- Selective pressures
-    - Investigating the selective pressures with different models
-
----
-
-## Thank You!
-
-![](images/story.png)
